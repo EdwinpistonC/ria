@@ -1,11 +1,8 @@
 var axios = require("axios").default;
 
-var i = "rice";
-
 var AuthorizationVar = "5bd79d3a420b3a880e1688b0272906af2c8f86a3";
 
-var dietVar = "",
-  ingredientsVar = "",
+var ingredientsVar = "",
   compositionVar = "energy,carbohydrate,protein,total_fat";
 
 var options = {
