@@ -2,10 +2,21 @@ var axios = require("axios").default;
 
 var i = "rice";
 
+var AuthorizationVar = "5bd79d3a420b3a880e1688b0272906af2c8f86a3";
+
+var dietVar = "",
+  ingredientsVar = "",
+  compositionVar = "energy,carbohydrate,protein,total_fat";
+
 var options = {
   method: "GET",
-  url: "https://www.recipepuppy.com/api/",
-  params: { i, q: "omelete", p: "3" },
+  url: "https://www.bon-api.com/api/v1/recipe/profiles/",
+  params: {
+    Authorization: AuthorizationVar,
+    ingredients: ingredientsVar,
+    composition: compositionVar,
+    language: "es",
+  },
 };
 axios
   .request(options)
